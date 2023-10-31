@@ -1,28 +1,26 @@
-* {
+html {
+    height: 100%;
     
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background-color:;
-    color:;
-    border: 1px solid;
-    margin-top: 0;
-}
-
-nav ul {
-    list-style-type: none;
+html, body{
     margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
 }
 
-nav li {
-    align-items: center;
-    
-    
+.cabecalho{
+    background-color:#E6EDE3;
+    width: 1440px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.lista_cabecalho{
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.lista_cabecalho li{
+    display: inline-block;
+    list-style: none;
 }
