@@ -3,6 +3,14 @@ html {
     
 }
 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    
+}
+
 html, body{
     margin: 0;
 }
@@ -23,3 +31,11 @@ html, body{
 .lista_cabecalho li{
     display: inline-block;
     list-style: none;
+   margin-right: 70px;
+    align-items: center;
+}
+
+.logo{
+    height: 90px;
+    border-radius: 100%;
+}
