@@ -21,6 +21,12 @@ html {
     height: 100%;
     }
 
+    @media only screen and (max-width: 600px) {
+        header {
+            flex-direction: column;
+            height: auto;
+        }
+
 header{
     display: flex;
     justify-content: space-between;
@@ -86,7 +92,7 @@ html, body{
 }
 
 .overlay h1 {
-    margin-top: 90px;
+    margin-top: 75px;
     font-size: 2.5rem;
     padding: 50px;
     
@@ -94,5 +100,22 @@ html, body{
 }
 
 .botaoover{
+    padding: 20px 50px;
+
     
+}
+
+.divagenda, .divdisponiveis, .divgaleria{
+    width: 100px;
+    height: 100px;
+}
+
+.tresemum {
+    display: flex;
+}
+
+
+.divgaleria img, .divdisponiveis img, .divagenda img {
+    width: 100%; 
+    height: auto; 
 }
