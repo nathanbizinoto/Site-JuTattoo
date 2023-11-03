@@ -17,23 +17,19 @@ time, mark, audio, video {
 	font-size: 100%;
 	vertical-align: baseline;
 }
-html {
-    height: 100%;
-    }
+* {
+    padding: 0;
+}
 
-    @media only screen and (max-width: 600px) {
-        header {
-            flex-direction: column;
-            height: auto;
-        }
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background:#d4d4d4;
+    background: linear-gradient( to left, #e17425, #b8a89e );
     height: 55px;
+    font-weight: bold;
 }
 
 html, body{
@@ -85,37 +81,43 @@ html, body{
     text-align: center;
     color: rgb(2, 2, 2);
     padding: 30px; 
-    background: rgba(250, 250, 250, 0.7);
+    background: rgba(255, 247, 213, 0.7);
     width: 850px;
     height: 450px;
     
 }
 
 .overlay h1 {
-    margin-top: 75px;
+    margin-top: 60px;
     font-size: 2.5rem;
     padding: 50px;
+    text-align: left;
+    margin-left: 150px;
     
     
 }
 
 .botaoover{
     padding: 20px 50px;
+    border: 1px solid transparent;
+    font-weight: bold;
+    background: linear-gradient( to right, #e17425, #b8a89e);
+    
 
     
 }
 
-.divagenda, .divdisponiveis, .divgaleria{
-    width: 100px;
-    height: 100px;
+.divagenda img, .divdisponiveis img, .divgaleria img {
+    width: 450px;
+    height: 450px;
 }
 
 .tresemum {
     display: flex;
-}
+    overflow-x: auto;
+    margin-top: 0px;}
 
 
-.divgaleria img, .divdisponiveis img, .divagenda img {
-    width: 100%; 
-    height: auto; 
+.secdiv{
+    margin-top: 0px;
 }
