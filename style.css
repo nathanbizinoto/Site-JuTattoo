@@ -1,3 +1,22 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
 html {
     height: 100%;
     }
@@ -7,7 +26,8 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background:#e6ede3;
+    background:#d4d4d4;
+    height: 55px;
 }
 
 html, body{
@@ -24,12 +44,13 @@ html, body{
     display: flex;
     align-items: flex-end;
     gap: 20px;
+    font-size: 1.2rem;
 }
 
 .lista_cabecalho li{
     display: inline-block;
     list-style: none;
-    margin-right: 30px;
+    margin-right: 40px;
     align-items: center;
 }
 
@@ -39,12 +60,39 @@ html, body{
 }
 
 .logo{
-    height: 90px;
+    height: 70px;
     border-radius: 100%;
+    margin-left: 10px;
 }
 
 .background{
     width: 100%;
-    height: 1600px;
+    
 
+}
+.overlay {
+    margin-top: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(2, 2, 2);
+    padding: 30px; 
+    background: rgba(250, 250, 250, 0.7);
+    width: 850px;
+    height: 450px;
+    
+}
+
+.overlay h1 {
+    margin-top: 90px;
+    font-size: 2.5rem;
+    padding: 50px;
+    
+    
+}
+
+.botaoover{
+    
 }
