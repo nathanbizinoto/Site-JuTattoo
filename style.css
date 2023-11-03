@@ -30,6 +30,7 @@ header{
     background: linear-gradient( to left, #e17425, #b8a89e );
     height: 55px;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
 
 html, body{
@@ -92,8 +93,8 @@ html, body{
     font-size: 2.5rem;
     padding: 50px;
     text-align: left;
-    margin-left: 150px;
-    
+    margin-left: 100px;
+    font-family: 'Montserrat', sans-serif;
     
 }
 
@@ -102,8 +103,8 @@ html, body{
     border: 1px solid transparent;
     font-weight: bold;
     background: linear-gradient( to right, #e17425, #b8a89e);
-    
-
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
     
 }
 
@@ -115,7 +116,8 @@ html, body{
 .tresemum {
     display: flex;
     overflow-x: auto;
-    margin-top: 0px;}
+    margin-top: 0px;
+    width: 100%;}
 
 
 .secdiv{
