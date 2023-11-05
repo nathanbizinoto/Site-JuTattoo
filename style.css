@@ -108,18 +108,33 @@ html, body{
     
 }
 
-.divagenda img, .divdisponiveis img, .divgaleria img {
-    width: 450px;
-    height: 450px;
-}
-
 .tresemum {
     display: flex;
     overflow-x: auto;
-    margin-top: 0px;
-    width: 100%;}
-
-
-.secdiv{
-    margin-top: 0px;
+    width: 100%
 }
+
+.divgaleria, .divagenda, .divdisponiveis {
+    text-align: center;
+    position: relative;
+    margin: 0px;}
+
+.divgaleria img, .divagenda img, .divdisponiveis img {
+    width: 100%;
+    max-width: 450px;
+    max-height: 450px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.butgaleria, .butagenda, .butdisponiveis {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px 70px;
+    border: solid 1px transparent;
+    font-size: large;
+}
+
