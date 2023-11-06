@@ -91,7 +91,7 @@ html, body{
     text-align: center;
     color: rgb(2, 2, 2);
     padding: 30px; 
-    background: rgba(136, 110, 39, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
     width: 850px;
     height: 450px;
     
@@ -156,10 +156,12 @@ html, body{
     border: solid 1px transparent;
     font-size: larger;
     transition: transform 0.2s;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .butgaleria:hover, .butagenda:hover, .butdisponiveis:hover{
-    transform: scale(1.1)
+    
 }
 
   footer {
@@ -177,6 +179,8 @@ html, body{
     margin-top: 50px;
     margin-bottom: 25px;
     font-size: larger;
+    font-family: 'Montserrat', sans-serif;
+
   }
   
 
@@ -203,7 +207,9 @@ html, body{
     font-size: larger;
     background-color: rgba(255, 255, 255, 0.7);
     border: transparent;
-
+    font-family: 'Montserrat', sans-serif;
+    transition: transform;
   }
+  
   
 
