@@ -27,7 +27,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background: linear-gradient( to left, #e17425, #b8a89e );
+    background: linear-gradient( to left, #e17425, #66574f );
     height: 55px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
@@ -55,7 +55,15 @@ html, body{
     list-style: none;
     margin-right: 40px;
     align-items: center;
+    transition: transform 0.2s;
+
 }
+
+.lista_cabecalho li:hover{
+    transform: scale(1.1);
+}
+
+
 
 .lista_cabecalho a{
     text-decoration: none;
@@ -70,6 +78,7 @@ html, body{
 
 .background{
     width: 100%;
+    margin-bottom: -5px;
     
 
 }
@@ -82,7 +91,7 @@ html, body{
     text-align: center;
     color: rgb(2, 2, 2);
     padding: 30px; 
-    background: rgba(255, 247, 213, 0.7);
+    background: rgba(136, 110, 39, 0.7);
     width: 850px;
     height: 450px;
     
@@ -102,10 +111,14 @@ html, body{
     padding: 20px 50px;
     border: 1px solid transparent;
     font-weight: bold;
-    background: linear-gradient( to right, #e17425, #b8a89e);
+    background: linear-gradient( to right, #924e1d, #725442);
     font-size: large;
     font-family: 'Montserrat', sans-serif;
-    
+    transition: transform 0.2s;
+}
+
+.botaoover:hover{
+    transform: scale(1.1);
 }
 
 .tresemum {
@@ -125,7 +138,13 @@ html, body{
     max-height: 450px;
     height: auto;
     margin: 0 auto;
+    transition: transform 0.2s;
 }
+
+.divgaleria img:hover, .divagenda img:hover, .divdisponiveis img:hover{
+    transform: scale(1.1);
+}
+
 
 .butgaleria, .butagenda, .butdisponiveis {
     position: absolute;
@@ -133,8 +152,58 @@ html, body{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.7);
-    padding: 30px 70px;
+    padding: 50px 100px;
     border: solid 1px transparent;
-    font-size: large;
+    font-size: larger;
+    transition: transform 0.2s;
 }
+
+.butgaleria:hover, .butagenda:hover, .butdisponiveis:hover{
+    transform: scale(1.1)
+}
+
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px ;
+    margin-right: 200px ;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: larger;
+  }
+  
+
+  .divhistoria{
+    text-align: center;
+    position: relative;
+    margin: 0px;
+
+  }
+
+  .divhistoria img{
+    width: 100%;
+    margin-bottom: -5px;
+    margin-top: -5px;
+  }
+
+
+  .buthistoria{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px 100px;
+    font-size: larger;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: transparent;
+
+  }
+  
 
