@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ju Tattoo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+    <style>
+       
+        #calculator {
+            
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="Images/Logo.JPG" class="logo">
+            <ul class="lista_cabecalho">
+                <li><a href="index.html"><b></b>Home</a></li>
+                <li><a href="galeria.html">Galeria</a> </li>
+                <li><a href="disponiveis.html">Disponiveis</a> </li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="historia.html">Minha História</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="calculator">
+        <h2>Calculadora de Orçamento de Tatuagem</h2>
+        <label for="tamanho">Tamanho da Tatuagem (cm):</label>
+        <input type="number" id="tamanho" placeholder="Informe o tamanho da tatuagem" required>
+
+        <label for="cores">Número de Cores:</label>
+        <input type="number" id="cores" placeholder="Informe o número de cores" required>
+
+        <button onclick="calcularOrcamento()">Calcular Orçamento</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        function calcularOrcamento() {
+            // Obter valores dos campos de entrada
+            const tamanhoTatuagem = parseFloat(document.getElementById('tamanho').value);
+            const coresTatuagem = parseInt(document.getElementById('cores').value);
+
+            // Se os valores forem válidos, calcular o orçamento
+            if (!isNaN(tamanhoTatuagem) && !isNaN(coresTatuagem)) {
+                const precoPor15Cm = 250;
+                const precoPorCor = 75;
+                const precoBase = Math.ceil(tamanhoTatuagem / 15) * precoPor15Cm;
+                
+                // Calcular o preço das cores, excluindo a primeira cor
+                const precoCores = Math.max(0, coresTatuagem - 1) * precoPorCor;
+                const precoTotal = precoBase + precoCores;
+
+                // Exibir o resultado
+                document.getElementById('resultado').innerHTML = `O orçamento para a tatuagem é de R$ ${precoTotal.toFixed(2)}`;
+            } else {
+                // Exibir mensagem de erro se os valores não forem válidos
+                document.getElementById('resultado').innerHTML = 'Por favor, insira valores válidos.';
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
