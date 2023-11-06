@@ -231,4 +231,15 @@ html, body{
     text-decoration: line-through;
 }
   
+a{
+    color: #333;
+}
+
+a:visited{
+    color: #333;
+}
+
+a:hover{
+    color: #9d6b2a;
+}
 
