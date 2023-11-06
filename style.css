@@ -27,11 +27,14 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background: linear-gradient( to left, #e17425, #66574f );
+    color: white;
     height: 55px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
+    background: #9d6b2a;
+
 }
+
 
 html, body{
     margin: 0;
@@ -48,6 +51,8 @@ html, body{
     align-items: flex-end;
     gap: 20px;
     font-size: 1.2rem;
+    color: white;
+
 }
 
 .lista_cabecalho li{
@@ -56,11 +61,14 @@ html, body{
     margin-right: 40px;
     align-items: center;
     transition: transform 0.2s;
+     color: white;
+
 
 }
 
 .lista_cabecalho li:hover{
     transform: scale(1.1);
+    text-decoration: line-through;
 }
 
 
@@ -111,14 +119,17 @@ html, body{
     padding: 20px 50px;
     border: 1px solid transparent;
     font-weight: bold;
-    background: linear-gradient( to right, #924e1d, #725442);
     font-size: large;
     font-family: 'Montserrat', sans-serif;
     transition: transform 0.2s;
+    background: #9d6b2a;
+
+    
 }
 
 .botaoover:hover{
     transform: scale(1.1);
+    text-decoration: line-through;
 }
 
 .tresemum {
@@ -154,14 +165,14 @@ html, body{
     background-color: rgba(255, 255, 255, 0.7);
     padding: 50px 100px;
     border: solid 1px transparent;
-    font-size: larger;
+    font-size: 30px;
     transition: transform 0.2s;
     font-family: 'Montserrat', sans-serif;
 
 }
 
 .butgaleria:hover, .butagenda:hover, .butdisponiveis:hover{
-    
+    text-decoration: line-through;
 }
 
   footer {
@@ -178,10 +189,15 @@ html, body{
     margin-right: 200px ;
     margin-top: 50px;
     margin-bottom: 25px;
-    font-size: larger;
+    font-size: 20px;
     font-family: 'Montserrat', sans-serif;
 
   }
+
+  
+  .social {
+    border-right: 1px solid white; 
+    padding-right: 20px;}
   
 
   .divhistoria{
@@ -211,5 +227,8 @@ html, body{
     transition: transform;
   }
   
+.buthistoria:hover{
+    text-decoration: line-through;
+}
   
 
