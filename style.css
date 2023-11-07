@@ -31,7 +31,7 @@ header{
     height: 55px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-    background: #9d6b2a;
+    background: linear-gradient( to right, #d0c1b2, #ae743a);
 
 }
 
@@ -130,6 +130,7 @@ html, body{
 .botaoover:hover{
     transform: scale(1.1);
     text-decoration: line-through;
+    color: #000000;
 }
 
 .tresemum {
@@ -239,7 +240,25 @@ a:visited{
     color: #000000;
 }
 
-a:hover{
-    color: rgb(65, 175, 65);
+.bodygallery{
+    background: linear-gradient(to right, #333, #121212)
+        
 }
 
+.gallery img{
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover{
+    transform: scale(1.1);
+}
+
+.gallery{
+    column-count: 4;
+    column-gap: 10px;
+    margin-top: 25px;
+    padding: 5px;
+}
