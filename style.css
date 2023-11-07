@@ -232,14 +232,14 @@ html, body{
 }
   
 a{
-    color: #333;
+    color: #000000;
 }
 
 a:visited{
-    color: #333;
+    color: #000000;
 }
 
 a:hover{
-    color: #9d6b2a;
+    color: rgb(65, 175, 65);
 }
 
