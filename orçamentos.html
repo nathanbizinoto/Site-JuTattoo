@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ju Tattoo</title>
+    <title>Orçamentos</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+
     <style>
-       
+
         #calculator {
-            
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #calculator {
+            max-width: 400px;
             margin: 0 auto;
             background-color: #fff;
             padding: 20px;
@@ -24,7 +34,7 @@
             margin-bottom: 8px;
         }
 
-        input {
+        input, select {
             width: 100%;
             padding: 8px;
             margin-bottom: 16px;
@@ -59,8 +69,23 @@
             </ul>
         </nav>
     </header>
-    <div id="calculator">
+
+    <main>
+
+    <div id="calculator" class="calculadora">
         <h2>Calculadora de Orçamento de Tatuagem</h2>
+        
+        <label for="parteCorpo">Escolha a parte do corpo:</label>
+        <select id="parteCorpo">
+            <option value="cabeca">Cabeça</option>
+            <option value="membrosInferiores">Membros Inferiores</option>
+            <option value="membrosSuperiores">Membros Superiores</option>
+            <option value="peito">Peito</option>
+            <option value="barriga">Barriga</option>
+            <option value="costas">Costas</option>
+            <option value="pe">Pé</option>
+        </select>
+
         <label for="tamanho">Tamanho da Tatuagem (cm):</label>
         <input type="number" id="tamanho" placeholder="Informe o tamanho da tatuagem" required>
 
@@ -72,20 +97,34 @@
         <div id="resultado"></div>
     </div>
 
+
+
+
+
+
+
+    </main>
+
     <script>
         function calcularOrcamento() {
             // Obter valores dos campos de entrada
             const tamanhoTatuagem = parseFloat(document.getElementById('tamanho').value);
             const coresTatuagem = parseInt(document.getElementById('cores').value);
+            const parteCorpo = document.getElementById('parteCorpo').value;
 
-            // Se os valores forem válidos, calcular o orçamento
             if (!isNaN(tamanhoTatuagem) && !isNaN(coresTatuagem)) {
                 const precoPor15Cm = 250;
-                const precoPorCor = 75;
-                const precoBase = Math.ceil(tamanhoTatuagem / 15) * precoPor15Cm;
-                
-                // Calcular o preço das cores, excluindo a primeira cor
-                const precoCores = Math.max(0, coresTatuagem - 1) * precoPorCor;
+                const precoPorCor = 50;
+                const precoAdicionalPorParte = 75;
+
+                let precoBase = Math.ceil(tamanhoTatuagem / 15) * precoPor15Cm;
+                const precoCores = coresTatuagem * precoPorCor;
+
+                // Adicionar custo adicional para partes específicas do corpo
+                if (parteCorpo === 'barriga' || parteCorpo === 'costas' || parteCorpo === 'cabeca' || parteCorpo === 'pe') {
+                    precoBase += precoAdicionalPorParte;
+                }
+
                 const precoTotal = precoBase + precoCores;
 
                 // Exibir o resultado
@@ -97,62 +136,5 @@
         }
     </script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
-
