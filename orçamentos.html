@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
 
     <style>
-
         #calculator {
             max-width: 400px;
             margin: 0 auto;
@@ -34,7 +34,8 @@
             margin-bottom: 8px;
         }
 
-        input, select {
+        input,
+        select {
             width: 100%;
             padding: 8px;
             margin-bottom: 16px;
@@ -59,43 +60,43 @@
 <body>
     <header>
         <img src="Images/Logo.JPG" class="logo">
-            <ul class="lista_cabecalho">
-                <li><a href="index.html"><b></b>Home</a></li>
-                <li><a href="galeria.html">Galeria</a> </li>
-                <li><a href="disponiveis.html">Disponiveis</a> </li>
-                <li><a href="agenda.html">Agenda</a></li>
-                <li><a href="historia.html">Minha História</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-            </ul>
+        <ul class="lista_cabecalho">
+            <li><a href="index.html"><b></b>Home</a></li>
+            <li><a href="galeria.html">Galeria</a> </li>
+            <li><a href="disponiveis.html">Disponiveis</a> </li>
+            <li><a href="agenda.html">Agenda</a></li>
+            <li><a href="historia.html">Minha História</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
         </nav>
     </header>
 
     <main>
 
-    <div id="calculator" class="calculadora">
-        <h2>Calculadora de Orçamento de Tatuagem</h2>
-        
-        <label for="parteCorpo">Escolha a parte do corpo:</label>
-        <select id="parteCorpo">
-            <option value="cabeca">Cabeça</option>
-            <option value="membrosInferiores">Membros Inferiores</option>
-            <option value="membrosSuperiores">Membros Superiores</option>
-            <option value="peito">Peito</option>
-            <option value="barriga">Barriga</option>
-            <option value="costas">Costas</option>
-            <option value="pe">Pé</option>
-        </select>
+        <div id="calculator" class="calculadora">
+            <h2>Calculadora de Orçamento de Tatuagem</h2>
 
-        <label for="tamanho">Tamanho da Tatuagem (cm):</label>
-        <input type="number" id="tamanho" placeholder="Informe o tamanho da tatuagem" required>
+            <label for="parteCorpo">Escolha a parte do corpo:</label>
+            <select id="parteCorpo">
+                <option value="cabeca">Cabeça</option>
+                <option value="membrosInferiores">Membros Inferiores</option>
+                <option value="membrosSuperiores">Membros Superiores</option>
+                <option value="peito">Peito</option>
+                <option value="barriga">Barriga</option>
+                <option value="costas">Costas</option>
+                <option value="pe">Pé</option>
+            </select>
 
-        <label for="cores">Número de Cores:</label>
-        <input type="number" id="cores" placeholder="Informe o número de cores" required>
+            <label for="tamanho">Tamanho da Tatuagem (cm):</label>
+            <input type="number" id="tamanho" placeholder="Informe o tamanho da tatuagem" required>
 
-        <button onclick="calcularOrcamento()">Calcular Orçamento</button>
+            <label for="cores">Número de Cores:</label>
+            <input type="number" id="cores" placeholder="Informe o número de cores" required>
 
-        <div id="resultado"></div>
-    </div>
+            <button onclick="calcularOrcamento()">Calcular Orçamento</button>
+
+            <div id="resultado"></div>
+        </div>
 
 
 
@@ -137,4 +138,5 @@
     </script>
 
 </body>
+
 </html>
