@@ -31,13 +31,21 @@ header{
     height: 55px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient( to right, #d0c1b2, #ae743a);
+    background: transparent;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    position: fixed;
+
 
 }
 
 
 html, body{
     margin: 0;
+}
+
+body{
+    background: #d0c1b2;
 }
 
 .cabecalho{
@@ -116,16 +124,17 @@ html, body{
 }
 
 .botaoover{
-    padding: 20px 50px;
-    border: 1px solid transparent;
+   
     font-weight: bold;
-    font-size: large;
     font-family: 'Montserrat', sans-serif;
     transition: transform 0.2s;
     background: #9d6b2a;
-
+    padding: 50px 100px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: solid 1px transparent;
+    font-size: 30px;}
     
-}
+
 
 .botaoover:hover{
     transform: scale(1.1);
@@ -151,10 +160,7 @@ html, body{
     height: auto;
     margin: 0 auto;
     transition: transform 0.2s;
-}
 
-.divgaleria img:hover, .divagenda img:hover, .divdisponiveis img:hover{
-    transform: scale(1.1);
 }
 
 
@@ -167,7 +173,6 @@ html, body{
     padding: 50px 100px;
     border: solid 1px transparent;
     font-size: 30px;
-    transition: transform 0.2s;
     font-family: 'Montserrat', sans-serif;
 
 }
@@ -221,23 +226,20 @@ html, body{
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 50px 100px;
-    font-size: larger;
     background-color: rgba(255, 255, 255, 0.7);
-    border: transparent;
-    font-family: 'Montserrat', sans-serif;
-    transition: transform;
-  }
+    border: solid 1px transparent;
+    font-size: 30px;}
   
 .buthistoria:hover{
     text-decoration: line-through;
 }
   
 a{
-    color: #000000;
+    color: #ffffff;
 }
 
 a:visited{
-    color: #000000;
+    color: #ffffff;
 }
 
 .bodygallery{
@@ -250,6 +252,7 @@ a:visited{
     border-radius: 4px;
     margin-bottom: 10px;
     transition: transform 0.2s;
+    margin-top: 80px;
 }
 
 .gallery img:hover{
@@ -259,6 +262,8 @@ a:visited{
 .gallery{
     column-count: 4;
     column-gap: 15px;
-    margin-top: 25px;
+
     padding: 10px;
 }
+
+.bodygallery{}
