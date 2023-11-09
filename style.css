@@ -182,6 +182,7 @@ body{
 
 .butgaleria:hover, .butagenda:hover, .butdisponiveis:hover{
     text-decoration: line-through;
+    color: white;
 }
 
   footer {
