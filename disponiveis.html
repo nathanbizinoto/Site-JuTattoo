@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trabalhos Disponíveis</title>
+  <title>Ju Tattoo</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,23 +12,35 @@
   <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body class="bodygallerydispo">
   <header>
     <img src="Images/Logo.JPG" class="logo">
     <nav>
-    <ul class="lista_cabecalho">
+      <ul class="lista_cabecalho">
         <li><a href="index.html"><b></b>Home</a></li>
         <li><a href="galeria.html">Galeria</a> </li>
         <li><a href="disponiveis.html">Disponíveis</a> </li>
         <li><a href="orçamentos.html">Orçamentos</a></li>
         <li><a href="historia.html">Minha História</a></li>
         <li><a href="faq.html">FAQ</a></li>
-    </ul>
+      </ul>
     </nav>
-</header> 
+  </header>
 
-  <main>
-    <img class="background" src="Images/BackgroundHome-min.jpg" alt="">
+  <main class="maingallerydispo">
+
+    <section class="gallerydispo">
+      <img src="Images/dispo.jpg" class="gallery-img">
+      <img src="Images/dispo (1).jpg" class="gallery-img">
+      <img src="Images/dispo (2).jpg" class="gallery-img">
+      <img src="Images/dispo (3).jpg" class="gallery-img">
+      <img src="Images/dispo (4).jpg" class="gallery-img">
+      <img src="Images/dispo (5).jpg" class="gallery-img">
+      <img src="Images/dispo (6).jpg" class="gallery-img">
+      <img src="Images/dispo (7).jpg" class="gallery-img">
+      <img src="Images/dispo (8).jpg" class="gallery-img">
+    </section>
+
   </main>
 
   <footer>
@@ -38,16 +50,39 @@
         <p>Júlia Molina</p>
         <p>Email: jutattoo@hotmail.com</p>
         <p>Telefone: (16) 99423-2463</p>
-
       </div>
       <div class="address">
         <p>Endereço: Rua Uruguai, 1245 </p>
         <p>Jardim Consolação</p>
         <p>Franca - SP</p>
-
       </div>
     </div>
   </footer>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var galleryImages = document.querySelectorAll('.gallery-img');
+
+      galleryImages.forEach(function (img) {
+        img.addEventListener('click', function () {
+          var fullscreenDiv = document.createElement('div');
+          fullscreenDiv.classList.add('fullscreen');
+
+          var fullscreenImg = document.createElement('img');
+          fullscreenImg.src = img.src;
+
+          fullscreenDiv.appendChild(fullscreenImg);
+
+          document.body.appendChild(fullscreenDiv);
+
+          fullscreenDiv.addEventListener('click', function () {
+            document.body.removeChild(fullscreenDiv);
+          });
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
