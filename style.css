@@ -276,8 +276,8 @@ footer {
 .footer {
     display: flex;
     justify-content: space-between;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
     margin-top: 50px;
     margin-bottom: 25px;
     font-size: 20px;
@@ -464,6 +464,7 @@ a:visited {
 .divcontainer {
 
     margin: 75px;
+    font-size: 20px;
 
 }
 
