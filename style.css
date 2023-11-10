@@ -474,3 +474,17 @@ a:visited {
     border-radius: 16px;
 
 }
+
+.escrito{
+
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    margin: 35px;
+}
+
+.orcamentosbody{
+    text-align: center;
+
+}
