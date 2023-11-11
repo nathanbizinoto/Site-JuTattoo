@@ -232,8 +232,8 @@ body {
 .divgaleria img,
 .divagenda img,
 .divdisponiveis img {
-    width: 100%;
-    max-width: 450px;
+    width: 200%;
+    max-width: 500px;
     max-height: 450px;
     height: auto;
     margin: 0 auto;
