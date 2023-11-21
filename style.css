@@ -101,7 +101,7 @@ header {
     color: white;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(27, 25, 25, 0.8);
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -146,6 +146,7 @@ body {
 
 .lista_cabecalho li:hover {
     transform: scale(1.1);
+    color: #9d6b2a;
     text-decoration: line-through;
 }
 
@@ -248,7 +249,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     padding: 50px 100px;
     border: solid 1px transparent;
     font-size: 30px;
@@ -266,7 +267,7 @@ body {
 }
 
 footer {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);;
     color: white;
     padding: 20px;
     text-align: center;
@@ -275,10 +276,11 @@ footer {
 .footer {
     display: flex;
     justify-content: space-between;
+    
     margin-left: 300px;
     margin-right: 300px;
-    margin-top: 50px;
-    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-bottom: 20px;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
 
@@ -286,7 +288,7 @@ footer {
 
 
 .social {
-    padding-right: 20px;
+   padding: 10px 10px 10px 10px;
 }
 
 
@@ -310,7 +312,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 50px 70px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     border: solid 1px transparent;
     font-size: 30px;
     border-radius: 25px ;
@@ -319,6 +321,7 @@ footer {
 
 .buthistoria:hover {
     text-decoration: line-through;
+    color: #ffffff;
 }
 
 a {
@@ -428,6 +431,10 @@ a:visited {
 
 }
 
+.divfaq h1{
+    font-size: 20px;
+}
+
 .bodyfaq {
     background-image: url(Images/BackgroundHome-min.jpg);
     backdrop-filter: blur(5px);
@@ -477,14 +484,20 @@ a:visited {
 .escrito{
 
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+   padding: 30px 30px 30px 30px;
+   margin-left: 200px;
+   margin-right: 200px;
     font-size: 30px;
     margin: 35px;
+    border: 2px solid #000000;
+}
+.butescrito{
+    padding: 30px 100px;
 }
 
 .orcamentosbody{
     text-align: center;
+    
 
 }
 
