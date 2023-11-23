@@ -97,7 +97,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 8px;
     color: white;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
@@ -105,8 +105,23 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-}
+    text-shadow: 0.2em 0.2em 0.2em black;
 
+}
+.headerindex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
 
 
 html,
@@ -171,7 +186,6 @@ body {
 }
 
 .overlay {
-    margin-top: 60px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -183,7 +197,7 @@ body {
     width: 850px;
     height: 400px;
     border-radius: 25px ;
-
+    margin-bottom: 150px;
 }
 
 .overlay h1 {
@@ -269,7 +283,7 @@ body {
 footer {
     background: rgba(0, 0, 0, 0.8);;
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -419,10 +433,8 @@ a:visited {
     padding-left: 25px;
     padding-right: 25px;
     border: solid 1px white;
-    margin-top: 45px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 45px;
+    border-radius: 30px;
+    margin: 45px 200px 45px 200px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     font-size: 20px;
@@ -486,6 +498,11 @@ a:visited {
 
 }
 
+.divcontainer p{
+    font-size: 25px;
+    font-weight: 100;
+}
+
 .escrito{
 
     align-items: center;
@@ -493,7 +510,7 @@ a:visited {
    margin-left: 200px;
    margin-right: 200px;
     font-size: 30px;
-    margin: 35px;
+    margin-top: 50px;
     border: 2px solid #000000;
 }
 .butescrito{
@@ -506,3 +523,6 @@ a:visited {
 
 }
 
+.divbody{
+    margin-top: 75px;
+}
