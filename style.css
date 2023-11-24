@@ -362,11 +362,12 @@ a:visited {
     margin-bottom: 10px;
     transition: transform 0.2s;
     margin-top: 5px;
+    margin-left: 10px;
 }
 
 .gallerydispo img {
     width: 100%;
-    border-radius: 4px;
+    border-radius: 10px;
     margin-bottom: 10px;
     transition: transform 0.2s;
     margin-top: 5px;
@@ -517,9 +518,13 @@ a:visited {
    margin-right: 200px;
     font-size: 30px;
     margin-top: 50px;
-    border: 2px solid #000000;
+    border: 2px solid transparent;
     border-radius: 25px;
     margin-bottom: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
 .butescrito{
     padding: 30px 100px;
