@@ -107,7 +107,8 @@ header {
     text-shadow: 0.2em 0.2em 0.2em black;
 
 }
-.headerindex{
+
+.headerindex {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -175,7 +176,7 @@ body {
     height: 70px;
     border-radius: 100%;
     margin-left: 10px;
-    
+
 }
 
 .background {
@@ -196,7 +197,7 @@ body {
     background: rgba(0, 0, 0, 0.5);
     width: 850px;
     height: 400px;
-    border-radius: 25px ;
+    border-radius: 25px;
     margin-bottom: 150px;
 }
 
@@ -248,7 +249,7 @@ body {
 .divagenda img,
 .divdisponiveis img {
     width: 100%;
-    
+
     height: auto;
     margin: 0 auto;
     transition: transform 0.2s;
@@ -268,7 +269,7 @@ body {
     border: solid 1px transparent;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
-    border-radius: 25px ;
+    border-radius: 25px;
 
 
 }
@@ -285,7 +286,7 @@ footer {
     color: white;
     padding: 5px;
     text-align: center;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(49, 49, 49, 0.8));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.), rgba(49, 49, 49, 0.8));
 }
 
 .footer {
@@ -294,7 +295,7 @@ footer {
     margin-left: 200px;
     margin-right: 200px;
     margin-top: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -303,9 +304,11 @@ footer {
 .social {
     padding: 10px;
 }
+
 .address {
     padding: 10px;
-    margin-bottom: 0;}
+    margin-bottom: 0;
+}
 
 
 .divhistoria {
@@ -331,7 +334,7 @@ footer {
     background: rgba(0, 0, 0, 0.7);
     border: solid 1px transparent;
     font-size: 30px;
-    border-radius: 25px ;
+    border-radius: 25px;
 
 }
 
@@ -445,12 +448,13 @@ a:visited {
     ;
 }
 
-.divfaq h1{
+.divfaq h1 {
     font-size: 20px;
     text-shadow: 0.3em 0.3em 0.3em black;
 
 }
-.divfaq p{
+
+.divfaq p {
     font-size: 19px;
 }
 
@@ -491,7 +495,7 @@ a:visited {
 
     margin: 85px;
     font-size: 20px;
-    padding: 0px 40px 0px 40px ;
+    padding: 0px 40px 0px 40px;
 
 
 }
@@ -505,17 +509,18 @@ a:visited {
 
 }
 
-.divcontainer p{
+
+.divcontainer p {
     font-size: 25px;
     font-weight: 100;
 }
 
-.escrito{
+.escrito {
 
     align-items: center;
-   padding: 30px 30px 30px 30px;
-   margin-left: 200px;
-   margin-right: 200px;
+    padding: 30px 30px 30px 30px;
+    margin-left: 200px;
+    margin-right: 200px;
     font-size: 30px;
     margin-top: 50px;
     border: 2px solid transparent;
@@ -524,21 +529,21 @@ a:visited {
     background-color: rgba(0, 0, 0, 0.4);
     color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+
 }
-.butescrito{
+
+.butescrito {
     padding: 30px 100px;
 }
 
-.orcamentosbody{
+.orcamentosbody {
     text-align: center;
     background-image: url(Images/BackgroundHome-min.jpg);
     backdrop-filter: blur(5px);
-    
+
 
 }
 
-.divbody{
+.divbody {
     margin-top: 75px;
 }
-

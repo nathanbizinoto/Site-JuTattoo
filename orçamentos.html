@@ -16,15 +16,16 @@
             width: 750px;
             padding: 20px;
             margin: 0 auto;
-            background-color: rgba(0, 0, 0, 0.4);
-           font-size: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-size: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-top: 0px;
+            margin-bottom: 90px;
             border-radius: 50px;
         }
 
-        h1{
-            font-size: 25px;
+        h1 {
+            font-size: 28px;
             color: #fff;
             text-shadow: 0.2em 0.2em 0.2em black;
         }
@@ -49,16 +50,18 @@
 
         button {
             margin-top: 10px;
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(146, 144, 144, 0.4);
             color: #fff;
             padding: 20px 25px;
             border: none;
-            border-radius: 4px;
+            border-radius: 16px;
             cursor: pointer;
+            font-size: 15px;
         }
 
         button:hover {
-            background-color: #4e8b51;}
+            background-color: #4e8b51;
+        }
 
         #resultado {
             color: #fff;
@@ -66,9 +69,6 @@
             font-size: 22px;
 
         }
-
-
-        
     </style>
 </head>
 
@@ -88,103 +88,99 @@
     </header>
 
     <div class="divbody">
-    
-
-    <div class="calculadora"  id="calculator">
-        <h1>Calculadora de Orçamento de Tatuagem</h1>
-        <br>
-
-        <label for="parteCorpo">Escolha a parte do corpo:</label>
-        <select id="parteCorpo">
-            <option value="cabeca">Cabeça</option>
-            <option value="membrosSuperiores">Membros Superiores</option>
-            <option value="ombros">Ombros</option>
-            <option value="peito">Peito</option>
-            <option value="barriga">Barriga</option>
-            <option value="costas">Costas</option>
-            <option value="membrosInferiores">Membros Inferiores</option>
-            <option value="pe">Pé</option>
-
-        </select>
-
-        <label for="tamanho">Tamanho da Tatuagem (cm):</label>
-        <input type="number" id="tamanho" placeholder="Informe o tamanho da tatuagem (cm)" required>
-
-        <label for="cores">Número de Cores:</label>
-        <input type="number" id="cores" placeholder="Informe o número de cores" required>
-        <br>
-        <button onclick="calcularOrcamento()">Calcular Orçamento</button>
-
-        <div id="resultado"></div>
-    </div>
-    <div class="escrito">
-        <p>Entre em contato pelo instagram 👇</p><br>
-        <button class="butescrito"><a href="https://www.instagram.com/jutattoo.ink/">Instagram</a></button><br>
-        <br>
-        <p>Disponilizamos essa calculadora de orçamentos para o cliente ter alguma noção de quanto ficaria sua tatuagem
-        </p><br>
 
 
-    </div>
+        <div class="calculadora" id="calculator">
+            <h1>Calculadora de Orçamento de Tatuagem</h1>
+            <br>
 
-    <script>
-        function calcularOrcamento() {
-            // Obter valores dos campos de entrada
-            const tamanhoTatuagem = parseFloat(document.getElementById('tamanho').value);
-            const coresTatuagem = parseInt(document.getElementById('cores').value);
-            const parteCorpo = document.getElementById('parteCorpo').value;
+            <label for="parteCorpo">Escolha a parte do corpo:</label>
+            <select id="parteCorpo">
+                <option value="cabeca">Cabeça</option>
+                <option value="membrosSuperiores">Membros Superiores</option>
+                <option value="ombros">Ombros</option>
+                <option value="peito">Peito</option>
+                <option value="barriga">Barriga</option>
+                <option value="costas">Costas</option>
+                <option value="membrosInferiores">Membros Inferiores</option>
+                <option value="pe">Pé</option>
 
-            // Se os valores forem válidos, calcular o orçamento
-            if (!isNaN(tamanhoTatuagem) && !isNaN(coresTatuagem)) {
-                const precoPorCm = 18;
-                const precoPorCor = 75; // Preço adicional a partir da segunda cor
-                const precoAdicionalPorParte = 75;
-                const precoMinimo = 100;
+            </select>
 
-                let precoBase = tamanhoTatuagem * precoPorCm;
-                const precoCores = (coresTatuagem > 1) ? (coresTatuagem - 1) * precoPorCor : 0;
+            <label for="tamanho">Tamanho da Tatuagem (cm):</label>
+            <input type="number" id="tamanho" placeholder="Informe o tamanho da tatuagem (cm)" required>
 
-                // Adicionar custo adicional para todas as partes mencionadas
-                if (parteCorpo === 'pescoço' || parteCorpo === 'cabeca' || parteCorpo === 'pe' || parteCorpo === 'ombros' || parteCorpo === 'costas') {
-                    precoBase += precoAdicionalPorParte;
-                }
+            <label for="cores">Número de Cores:</label>
+            <input type="number" id="cores" placeholder="Informe o número de cores" required>
+            <br>
+            <button onclick="calcularOrcamento()">Calcular Orçamento</button>
 
-                // Calcular o preço total antes de adicionar o custo das cores
-                let precoTotal = precoBase;
-
-                // Adicionar o custo das cores
-                precoTotal += precoCores;
-
-                // Verificar se o preço total é inferior a R$ 100 e ajustar para o mínimo
-                if (precoTotal < precoMinimo) {
-                    precoTotal = precoMinimo;
-                }
-
-                // Exibir o resultado
-                document.getElementById('resultado').innerHTML = `O orçamento para a tatuagem é de R$ ${precoTotal.toFixed(2)}`;
-            } else {
-                // Exibir mensagem de erro se os valores não forem válidos
-                document.getElementById('resultado').innerHTML = 'Por favor, insira valores válidos.';
-            }
-        }
-    </script>
-    <footer>
-        <div class="footer">
-            <div class="social">
-                <p>@jutattoo.ink</p>
-                <p>Júlia Molina</p>
-                <p>julia.tattoo.studio@gmail.com</p>
-                <p>Telefone: (16) 99423-2463</p>
-
-            </div>
-            <div class="address">
-                <p>Endereço: Rua Uruguai, 1245 </p>
-                <p>Jardim Consolação</p>
-                <p>Franca - SP</p>
-
-            </div>
+            <div id="resultado"></div>
         </div>
-    </footer>
+       
+
+
+        </div>
+
+        <script>
+            function calcularOrcamento() {
+                // Obter valores dos campos de entrada
+                const tamanhoTatuagem = parseFloat(document.getElementById('tamanho').value);
+                const coresTatuagem = parseInt(document.getElementById('cores').value);
+                const parteCorpo = document.getElementById('parteCorpo').value;
+
+                // Se os valores forem válidos, calcular o orçamento
+                if (!isNaN(tamanhoTatuagem) && !isNaN(coresTatuagem)) {
+                    const precoPorCm = 18;
+                    const precoPorCor = 75; // Preço adicional a partir da segunda cor
+                    const precoAdicionalPorParte = 75;
+                    const precoMinimo = 100;
+
+                    let precoBase = tamanhoTatuagem * precoPorCm;
+                    const precoCores = (coresTatuagem > 1) ? (coresTatuagem - 1) * precoPorCor : 0;
+
+                    // Adicionar custo adicional para todas as partes mencionadas
+                    if (parteCorpo === 'pescoço' || parteCorpo === 'cabeca' || parteCorpo === 'pe' || parteCorpo === 'ombros' || parteCorpo === 'costas') {
+                        precoBase += precoAdicionalPorParte;
+                    }
+
+                    // Calcular o preço total antes de adicionar o custo das cores
+                    let precoTotal = precoBase;
+
+                    // Adicionar o custo das cores
+                    precoTotal += precoCores;
+
+                    // Verificar se o preço total é inferior a R$ 100 e ajustar para o mínimo
+                    if (precoTotal < precoMinimo) {
+                        precoTotal = precoMinimo;
+                    }
+
+                    // Exibir o resultado
+                    document.getElementById('resultado').innerHTML = `O orçamento para a tatuagem é de R$ ${precoTotal.toFixed(2)}`;
+                } else {
+                    // Exibir mensagem de erro se os valores não forem válidos
+                    document.getElementById('resultado').innerHTML = 'Por favor, insira valores válidos.';
+                }
+            }
+        </script>
+        <footer>
+            <div class="footer">
+                <div class="social">
+                    <p>@jutattoo.ink</p>
+                    <p>Júlia Molina</p>
+                    <p>julia.tattoo.studio@gmail.com</p>
+                    <p>Telefone: (16) 99423-2463</p>
+
+                </div>
+                <div class="address">
+                    <p>Endereço: Rua Uruguai, 1245 </p>
+                    <p>Jardim Consolação</p>
+                    <p>Franca</p>
+                    <p>São Paulo</p>
+
+                </div>
+            </div>
+        </footer>
     </div>
 
 
