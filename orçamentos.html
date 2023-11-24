@@ -12,39 +12,53 @@
     <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
     <style>
         #calculator {
-            max-width: 400px;
-            margin: 0 auto;
-            background-color: #fff;
+            height: 400px;
+            width: 750px;
             padding: 20px;
-            padding-bottom: 25px;
-            border-radius: 8px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.4);
+           font-size: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 0px;
+            border-radius: 50px;
+        }
+
+        h1{
+            font-size: 25px;
+            color: #fff;
+            text-shadow: 0.2em 0.2em 0.2em black;
         }
 
         label {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            color: #fff;
+            text-shadow: 0.2em 0.2em 0.2em black;
+
+
         }
 
         input,
         select {
-            width: 100%;
+            width: 50%;
             padding: 8px;
             margin-bottom: 16px;
             box-sizing: border-box;
+            border-radius: 35px;
         }
 
         button {
-            background-color: #4caf50;
+            margin-top: 10px;
+            background-color: rgba(0, 0, 0, 0.4);
             color: #fff;
-            padding: 10px 15px;
+            padding: 20px 25px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
         }
 
         button:hover {
-            background-color: #45a049;
+            background-color: #4e8b51;
 
 
         }
@@ -52,7 +66,7 @@
 </head>
 
 <body class="orcamentosbody">
-    <header class="headerindex">
+    <header class="header">
         <img src="Images/logocerto.png" class="logo">
         <nav>
             <ul class="lista_cabecalho">
@@ -67,19 +81,11 @@
     </header>
 
     <div class="divbody">
-    <div class="escrito">
-        <p>Entre em contato pelo instagram 👇</p><br>
-        <button class="butescrito"><a href="https://www.instagram.com/jutattoo.ink/">Instagram</a></button><br>
+    
+
+    <div class="calculadora"  id="calculator">
+        <h1>Calculadora de Orçamento de Tatuagem</h1>
         <br>
-        <p>Disponilizamos essa calculadora de orçamentos para o cliente ter alguma noção de quanto ficaria sua tatuagem
-        </p><br>
-
-
-    </div>
-
-
-    <div id="calculator">
-        <h2>Calculadora de Orçamento de Tatuagem</h2>
 
         <label for="parteCorpo">Escolha a parte do corpo:</label>
         <select id="parteCorpo">
@@ -95,14 +101,23 @@
         </select>
 
         <label for="tamanho">Tamanho da Tatuagem (cm):</label>
-        <input type="number" id="tamanho" placeholder="Informe o tamanho da tatuagem" required>
+        <input type="number" id="tamanho" placeholder="Informe o tamanho da tatuagem (cm)" required>
 
         <label for="cores">Número de Cores:</label>
         <input type="number" id="cores" placeholder="Informe o número de cores" required>
-
+        <br>
         <button onclick="calcularOrcamento()">Calcular Orçamento</button>
 
         <div id="resultado"></div>
+    </div>
+    <div class="escrito">
+        <p>Entre em contato pelo instagram 👇</p><br>
+        <button class="butescrito"><a href="https://www.instagram.com/jutattoo.ink/">Instagram</a></button><br>
+        <br>
+        <p>Disponilizamos essa calculadora de orçamentos para o cliente ter alguma noção de quanto ficaria sua tatuagem
+        </p><br>
+
+
     </div>
 
     <script>
