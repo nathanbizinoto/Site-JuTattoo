@@ -157,6 +157,7 @@ body {
     align-items: center;
     transition: transform 0.2s;
     color: white;
+    font-size: 23px;
 
 
 }
@@ -271,7 +272,7 @@ body {
     border: solid 1px transparent;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
-    border-radius: 25px;
+    border-radius: 16px;
 
 
 }
@@ -292,7 +293,7 @@ body {
 .butagenda:hover,
 .butdisponiveis:hover {
     text-decoration: line-through;
-    color: white;
+    color: #9d6b2a;
 }
 
 footer {
@@ -337,6 +338,10 @@ footer {
     margin-top: -5px;
 }
 
+.social a{
+    text-decoration: none;
+}
+
 
 .buthistoria {
     position: absolute;
@@ -344,16 +349,16 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 40px 80px;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.6);
     border: solid 1px transparent;
     font-size: 30px;
-    border-radius: 25px;
+    border-radius: 16px;
 
 }
 
 .buthistoria:hover {
     text-decoration: line-through;
-    color: #ffffff;
+    color: #9d6b2a;
 }
 
 a {
