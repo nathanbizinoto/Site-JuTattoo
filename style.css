@@ -127,6 +127,8 @@ header {
 html,
 body {
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 body {
@@ -151,7 +153,7 @@ body {
 .lista_cabecalho li {
     display: inline-block;
     list-style: none;
-    margin-right: 40px;
+    margin-right: 50px;
     align-items: center;
     transition: transform 0.2s;
     color: white;
@@ -175,7 +177,7 @@ body {
 .logo {
     height: 70px;
     border-radius: 100%;
-    margin-left: 10px;
+    margin-left: 20px;
 
 }
 
@@ -274,6 +276,25 @@ body {
 
 }
 
+.butgaleria a,
+.butagenda a,
+.butdisponiveis a,
+.buthistoria a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.butgaleria a,
+.butagenda a,
+.butdisponiveis a,
+.buthistoria a :hover{
+    color: #9d6b2a;
+}
+
+
 .butgaleria:hover,
 .butagenda:hover,
 .butdisponiveis:hover {
@@ -282,11 +303,10 @@ body {
 }
 
 footer {
-    background: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 5px;
     text-align: center;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.), rgba(49, 49, 49, 0.8));
+    background: linear-gradient(to right, #252525, #474646);
 }
 
 .footer {
@@ -330,8 +350,8 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 30px 80px;
-    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 80px;
+    background: rgba(0, 0, 0, 0.3);
     border: solid 1px transparent;
     font-size: 30px;
     border-radius: 25px;
@@ -491,10 +511,17 @@ a:visited {
     height: 200px;
 }
 
+.container4 {
+    display: flex;
+    align-items: center;
+}
+
+
+
 .divcontainer {
 
     margin: 85px;
-    font-size: 20px;
+    font-size: 5px;
     padding: 0px 40px 0px 40px;
 
 
@@ -511,8 +538,11 @@ a:visited {
 
 
 .divcontainer p {
-    font-size: 25px;
+    font-size: 21px;
+    color: aliceblue;
     font-weight: 100;
+    text-shadow: 0.2em 0.2em 0.2em black;
+
 }
 
 .escrito {
@@ -546,4 +576,8 @@ a:visited {
 
 .divbody {
     margin-top: 75px;
+}
+
+.bodyhistoria{
+    background: linear-gradient(to right, #333, #666);
 }

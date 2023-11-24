@@ -28,9 +28,7 @@
   </header>
 
   <div class="divbody">
-
     <main class="maingallery">
-
       <section class="gallery">
         <img src="Images/Galeria (11)-min.JPG" class="gallery-img">
         <img src="Images/Galeria (10)-min.JPG" class="gallery-img">
@@ -52,10 +50,8 @@
         <img src="Images/gal (9).jpg" class="gallery-img">
         <img src="Images/IMG_3856-min.jpg" class="gallery-img">
       </section>
-
     </main>
-    <button id="prevButton" class="nav-button">&#9664;</button>
-    <button id="nextButton" class="nav-button">&#9654;</button>
+
     <footer>
       <div class="footer">
         <div class="social">
@@ -63,91 +59,117 @@
           <p>Júlia Molina</p>
           <p>julia.tattoo.studio@gmail.com</p>
           <p>Telefone: (16) 99423-2463</p>
-
         </div>
         <div class="address">
           <p>Endereço: Rua Uruguai, 1245 </p>
           <p>Jardim Consolação</p>
           <p>Franca</p>
           <p>São Paulo</p>
-
         </div>
       </div>
     </footer>
   </div>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var galleryImages = document.querySelectorAll('.gallery-img');
-      var currentIndex = 0;
-
-      // Adiciona botões de navegação
-      var prevButton = document.getElementById('prevButton');
-      var nextButton = document.getElementById('nextButton');
-
-      prevButton.addEventListener('click', function () {
-        navigate(-1);
-      });
-
-      nextButton.addEventListener('click', function () {
-        navigate(1);
-      });
-
-      // Adiciona detecção de teclado
-      document.addEventListener('keydown', function (event) {
-        if (event.key === 'ArrowLeft') {
-          navigate(-1);
-        } else if (event.key === 'ArrowRight') {
-          navigate(1);
-        }
-      });
-
-      function navigate(direction) {
-        currentIndex += direction;
-
-        // Verifica limites para evitar índices inválidos
-        if (currentIndex < 0) {
-          currentIndex = galleryImages.length - 1;
-        } else if (currentIndex >= galleryImages.length) {
-          currentIndex = 0;
-        }
-
-        updateGallery();
-      }
-
-      function updateGallery() {
-        var fullscreenDiv = document.querySelector('.fullscreen');
-        if (fullscreenDiv) {
-          fullscreenDiv.removeChild(fullscreenDiv.firstChild);
-
-          var fullscreenImg = document.createElement('img');
-          fullscreenImg.src = galleryImages[currentIndex].src;
-
-          fullscreenDiv.appendChild(fullscreenImg);
-        }
-      }
-
-      galleryImages.forEach(function (img, index) {
-        img.addEventListener('click', function () {
-          var fullscreenDiv = document.createElement('div');
-          fullscreenDiv.classList.add('fullscreen');
-
-          var fullscreenImg = document.createElement('img');
-          fullscreenImg.src = img.src;
-
-          fullscreenDiv.appendChild(fullscreenImg);
-
-          document.body.appendChild(fullscreenDiv);
-
-          fullscreenDiv.addEventListener('click', function () {
-            document.body.removeChild(fullscreenDiv);
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ju Tattoo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+  </head>
+  
+  <body class="bodygallery">
+    <header class="headerindex">
+      <img src="Images/logocerto.png" class="logo">
+      <nav>
+        <ul class="lista_cabecalho">
+          <li><a href="index.html"><b></b>Home</a></li>
+          <li><a href="galeria.html">Galeria</a> </li>
+          <li><a href="disponiveis.html">Disponíveis</a> </li>
+          <li><a href="orçamentos.html">Orçamentos</a></li>
+          <li><a href="historia.html">Minha História</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <div class="divbody">
+      <main class="maingallery">
+        <section class="gallery">
+          <img src="Images/Galeria (11)-min.JPG" class="gallery-img">
+          <img src="Images/Galeria (10)-min.JPG" class="gallery-img">
+          <img src="Images/Galeria (5)-min.JPG" class="gallery-img">
+          <img src="Images/Galeria (3)-min.JPG" class="gallery-img">
+          <img src="Images/Galeria (2)-min.JPG" class="gallery-img">
+          <img src="Images/Galeria (9)-min.JPG" class="gallery-img">
+          <img src="Images/galeria.JPG" class="gallery-img">
+          <img src="Images/Galeria (6)-min.JPG" class="gallery-img">
+          <img src="Images/Galeria (7)-min.JPG" class="gallery-img">
+          <img src="Images/gal (1).jpg" class="gallery-img">
+          <img src="Images/gal (2).jpg" class="gallery-img">
+          <img src="Images/gal (3).jpg" class="gallery-img">
+          <img src="Images/gal (4).jpg" class="gallery-img">
+          <img src="Images/gal (5).jpg" class="gallery-img">
+          <img src="Images/gal (6).jpg" class="gallery-img">
+          <img src="Images/gal (7).jpg" class="gallery-img">
+          <img src="Images/gal (8).jpg" class="gallery-img">
+          <img src="Images/gal (9).jpg" class="gallery-img">
+          <img src="Images/IMG_3856-min.jpg" class="gallery-img">
+        </section>
+      </main>
+  
+      <footer>
+        <div class="footer">
+          <div class="social">
+            <p>@jutattoo.ink</p>
+            <p>Júlia Molina</p>
+            <p>julia.tattoo.studio@gmail.com</p>
+            <p>Telefone: (16) 99423-2463</p>
+          </div>
+          <div class="address">
+            <p>Endereço: Rua Uruguai, 1245 </p>
+            <p>Jardim Consolação</p>
+            <p>Franca</p>
+            <p>São Paulo</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var galleryImages = document.querySelectorAll('.gallery-img');
+        var currentIndex = 0;
+  
+        galleryImages.forEach(function (img, index) {
+          img.addEventListener('click', function () {
+            var fullscreenDiv = document.createElement('div');
+            fullscreenDiv.classList.add('fullscreen');
+  
+            var fullscreenImg = document.createElement('img');
+            fullscreenImg.src = img.src;
+  
+            fullscreenDiv.appendChild(fullscreenImg);
+  
+            document.body.appendChild(fullscreenDiv);
+  
+            fullscreenDiv.addEventListener('click', function () {
+              document.body.removeChild(fullscreenDiv);
+            });
+  
+            currentIndex = index;
           });
-
-          currentIndex = index;
         });
       });
-    });
-  </script>
-
+    </script>
+  </body>
+  
+  </html>
+  
 </body>
 
 </html>
