@@ -287,13 +287,6 @@ body {
     height: 100%;
 }
 
-.butgaleria a,
-.butagenda a,
-.butdisponiveis a,
-.buthistoria a :hover{
-    color: #9d6b2a;
-}
-
 
 .butgaleria:hover,
 .butagenda:hover,
@@ -306,7 +299,7 @@ footer {
     color: white;
     padding: 5px;
     text-align: center;
-    background: linear-gradient(to right, #252525, #474646);
+    background: linear-gradient(to right, #333, #474646);
 }
 
 .footer {
