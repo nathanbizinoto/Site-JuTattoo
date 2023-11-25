@@ -24,4 +24,4 @@ Se você quiser contribuir para melhorar nosso site, sinta-se à vontade para fa
 
 Obrigado por visitar o repositório do Ju Tattoo Ink. Esperamos que aproveite sua visita ao nosso site!
 
-@JuTattoo(https://www.instagram.com/jutattoo.ink/)https://www.instagram.com/jutattoo.ink/
+[@JuTattoo](https://www.instagram.com/jutattoo.ink/)
