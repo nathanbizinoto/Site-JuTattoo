@@ -1,5 +1,7 @@
 # Site-JuTattoo 🎨
 
+Acesse o site aqui: https://ju-tattoo.vercel.app/
+
 Bem-vindo ao repositório do site da Ju Tattoo Ink! Este é um projeto interdisciplinar do primeiro semestre dos alunos: Nathan Bizinoto, Paulo Henrique de Andrade e Vinicius Rodrigues; Dedicado a apresentar o estúdio de tatuagem de nossa amiga Júlia Molina, proporcionando aos clientes uma experiência informativa e interativa. Aqui estão algumas informações sobre as principais seções do site:
 
 # Galeria 📸
@@ -22,4 +24,4 @@ Se você quiser contribuir para melhorar nosso site, sinta-se à vontade para fa
 
 Obrigado por visitar o repositório do Ju Tattoo Ink. Esperamos que aproveite sua visita ao nosso site!
 
-[Insira aqui links para as redes sociais, contato e localização, se aplicável.]
+[@JuTattoo](https://www.instagram.com/jutattoo.ink/)
