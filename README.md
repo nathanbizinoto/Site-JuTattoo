@@ -1,27 +1,25 @@
-# Site-JuTattoo 🎨
+JuTattoo Website 🎨
+Access the website here: [Ju Tattoo Website](https://ju-tattoo.vercel.app/)
 
-Acesse o site aqui: https://ju-tattoo.vercel.app/
+Welcome to the repository of Ju Tattoo Ink's website! This is an interdisciplinary project from the first semester by students: Nathan Bizinoto, Paulo Henrique de Andrade, and Vinicius Rodrigues. It is dedicated to showcasing the tattoo studio of our friend Júlia Molina, providing customers with an informative and interactive experience. Here is some information about the main sections of the website:
 
-Bem-vindo ao repositório do site da Ju Tattoo Ink! Este é um projeto interdisciplinar do primeiro semestre dos alunos: Nathan Bizinoto, Paulo Henrique de Andrade e Vinicius Rodrigues; Dedicado a apresentar o estúdio de tatuagem de nossa amiga Júlia Molina, proporcionando aos clientes uma experiência informativa e interativa. Aqui estão algumas informações sobre as principais seções do site:
+Gallery 📸
+Explore the tattoo gallery for inspiration or simply admire the incredible work of our artist. Each image is accompanied by details about the style, size, and meaning, providing a comprehensive overview of what is offered.
 
-# Galeria 📸
-Explore a galeria de tatuagens para obter inspiração ou simplesmente apreciar o trabalho incrível de nossa artista. Cada imagem é acompanhada por detalhes sobre o estilo, tamanho e significado, proporcionando uma visão abrangente do que é oferecido.
+Available Designs ✨
+Discover designs available for tattooing at the moment. Our artist frequently creates unique designs ready to be adopted. This section is ideal for those seeking immediate inspiration or wishing to choose an amazing design without the wait of the customization process.
 
-# Disponíveis ✨
-Descubra os desenhos disponíveis para serem tatuados no momento. Nossa artista frequentemente cria designs exclusivos prontos para serem adotados. Essa seção é ideal para quem busca inspiração imediata ou deseja escolher um design incrível sem a espera do processo de personalização.
+History 📖
+Learn more about the history of Ju Tattoo Ink and its founder Júlia Molina. Discover its roots, the significant milestones that shaped its journey, and the ongoing commitment to excellence in the art of tattooing.
 
-# História 📖
-Aprenda mais sobre a história do Ju Tattoo Ink e sua fundadora Júlia Molina. Conheça suas raízes, os marcos importantes que moldaram sua jornada e o compromisso contínuo com a excelência na arte da tatuagem.
+Budget Calculator 🖩
+Use our budget calculator to get an estimate of the costs associated with your desired tattoo. Choose the size, number of colors, and the body area to get a general idea of prices. Remember that final budgets may vary and will be discussed personally with the artist.
 
-# Calculadora de Orçamentos 🖩
-Use nossa calculadora de orçamentos para ter uma estimativa dos custos associados à sua tatuagem desejada. Escolha o tamanho, quantidade de cores e a área do corpo para obter uma ideia geral dos preços. Lembre-se de que os orçamentos finais podem variar e serão discutidos pessoalmente com a artista.
+FAQ ❓
+Check our frequently asked questions for quick and comprehensive answers about the tattoo process, post-tattoo care, studio policies, and more. If you still have questions, feel free to contact us.
 
-# FAQ ❓
-Confira nossas perguntas frequentes para obter respostas rápidas e abrangentes sobre o processo de tatuagem, cuidados pós-tatuagem, políticas do estúdio e muito mais. Se ainda tiver dúvidas, não hesite em entrar em contato conosco.
+Contribution 🤝
+If you want to contribute to improving our website, feel free to fork this repository, make your changes, and submit a pull request. We are open to suggestions, corrections, and continuous improvements.
 
-# Contribuição 🤝
-Se você quiser contribuir para melhorar nosso site, sinta-se à vontade para fazer um fork deste repositório, realizar suas alterações e enviar um pull request. Estamos abertos a sugestões, correções e melhorias contínuas.
-
-Obrigado por visitar o repositório do Ju Tattoo Ink. Esperamos que aproveite sua visita ao nosso site!
-
+Thank you for visiting the Ju Tattoo Ink repository. We hope you enjoy your visit to our website!
 [@JuTattoo](https://www.instagram.com/jutattoo.ink/)
